@@ -9,9 +9,9 @@ Fields are in this order:
 - latitude
 - longitude
 - date
-- prix
-- nom (type of gas)
-- valeur (price in millieuros)
+- id carburant (gas id)
+- nom carburant (gas label)
+- prix (price in millieuros)
 
 
 Please see additional references at http://www.prix-carburants.gouv.fr/rubrique/opendata/
