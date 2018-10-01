@@ -54,7 +54,11 @@ def generate_stations(filename, header=False):
         lat = pdv.attrib['latitude']
         lon = pdv.attrib['longitude']
         adresse = pdv.find('adresse').text
+        if adresse is None:
+            adresse = ''
         ville = pdv.find('ville').text
+        if ville is None:
+            ville = ''
         cp_pdv = pdv.attrib['cp']
         row = '|'.join([id_pdv, cp_pdv, pop, lat, lon, adresse, ville])
         print(row)
